@@ -4,99 +4,220 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>CV</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Box Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
   </head>
   <body>
-    <div class="full">
-      <div class="left">
-        <div class="image rounded-img">
-          <img
-            src="user.jpg"
-            alt="logo"
-            width="150"
-            height="150"
-            class="rounded-img"
-          />
+    <!-- Navbar -->
+    <header>
+      <a href="#" class="logo">Profile</a>
+
+      <div class="bx bx-menu" id="menu-icon"></div>
+
+      <ul class="navbar">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="bx bx-moon" id="darkmode"></div>
+      </ul>
+    </header>
+    <!-- Home -->
+
+    <section class="home" id="home">
+      <div class="social">
+        <a href="#"><i class="bx bxl-github"></i></a>
+        <a href="#"><i class="bx bxl-dribbble"></i></a>
+        <a href="#"><i class="bx bxl-behance"></i></a>
+      </div>
+      <div class="home-img">
+        <img src="#" alt="avatar" />
+      </div>
+      <div class="home-text">
+        <span>Hello, I'm</span>
+        <h1>Luong Thanh Dat</h1>
+        <h2>Java Developer</h2>
+        <p>“ No one can write a perfect software, neither can you”</p>
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+    </section>
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="heading">
+        <h2>About Me</h2>
+        <span>Introduction</span>
+      </div>
+      <!-- About Content -->
+      <div class="about-container">
+        <div class="about-img">
+          <img src="#" alt="avatar" />
         </div>
-        <div class="Contact">
-          <h2>Liên hệ</h2>
-          <ul>
-            <li><b>Email: </b>luongthanhdat.20020922@gmail.com</li>
-            <li><b>Phone: </b>0934891876</li>
-          </ul>
-        </div>
-        <div class="Skills">
-          <h2>Kỹ năng</h2>
-          <ul>
-            <li><b>Ngôn ngữ lập trình: </b>Java, C#</li>
-            <li><b>Frontend: </b>HTML, CSS, JavaScript, Bootstrap</li>
-            <li><b>Backend: </b>Servlet, JSP, Spring MVC, Hibernate, JPA</li>
-          </ul>
-        </div>
-        <div class="Language">
-          <h2>Ngôn ngữ</h2>
-          <ul>
-            <li>Vietnamese</li>
-            <li>English</li>
-          </ul>
-        </div>
-        <div class="Hobbies">
-          <h2>Sở thích</h2>
-          <ul>
-            <li>Nghe nhạc</li>
-            <li>Xem phim</li>
-          </ul>
+        <div class="about-text">
+          <p>
+            Tôi là Lương Thành Đạt, năm nay tôi 20 tuổi. Tôi hiện tại đang là sinh viên năm 3 của trường Đại học Phú Xuân
+            , tôi đã có kinh nghiệm 2 năm về lập trình Java qua các đồ án kết thúc học phần như: Java Core, Java OOP, Java Swing,
+            Java Web (JSP, Servlet, Spring MVC, Hibernate, JPA).
+
+          </p>
+          <div class="information">
+            <!-- Box 1 -->
+            <div class="info-box">
+              <i class="bx bxs-user"></i>
+              <span>Luong Thanh Dat</span>
+            </div>
+            <!-- Box 2 -->
+            <div class="info-box">
+              <i class="bx bxs-phone"></i>
+              <span>+84 934891876</span>
+            </div>
+            <!-- Box 3 -->
+            <div class="info-box">
+              <i class="bx bxs-envelope"></i>
+              <span>luongthanhdat.20020922@gmail.com</span>
+            </div>
+          </div>
+          <a href="#" class="btn">Download CV</a>
         </div>
       </div>
-      <div class="right">
-        <div class="name">
-          <h1>Lương Thành Đạt</h1>
+    </section>
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <div class="heading">
+        <h2>Skills</h2>
+        <span>My Skills</span>
+      </div>
+      <!-- Skills Content -->
+      <div class="skills-container">
+        <div class="bars">
+          <!-- Box 1 -->
+          <div class="bars-box">
+            <h3>Java</h3>
+            <span>94%</span>
+            <div class="light-bar"></div>
+            <div class="percent-bar html-bar"></div>
+          </div>
+          <!-- Box 2 -->
+          <div class="bars-box">
+            <h3>HTML</h3>
+            <span>84%</span>
+            <div class="light-bar"></div>
+            <div class="percent-bar css-bar"></div>
+          </div>
+          <!-- Box 3 -->
+          <div class="bars-box">
+            <h3>CSS</h3>
+            <span>74%</span>
+            <div class="light-bar"></div>
+            <div class="percent-bar js-bar"></div>
+          </div>
+          <!-- Box 4 -->
+          <div class="bars-box">
+            <h3>JavaScript</h3>
+            <span>80%</span>
+            <div class="light-bar"></div>
+            <div class="percent-bar react-bar"></div>
+          </div>
         </div>
-        <div class="title">
-          <p>Java Developer</p>
-        </div>
-        <div class="Summary">
-          <h2>Mục tiêu nghề nghiệp</h2>
-          <ul>
-            <li>
-              Mục đích ngắn hạn của tôi là làm quen và thành thạo công việc
-              trong vòng 6 tháng
-            </li>
-            <li>
-              Mục đích dài hạn của tôi là cơ hội thăng tiến đến vị trí Project
-              Manager
-            </li>
-            <li>
-              Áp dụng những kinh nghiệm về kỹ năng lập trình và sự hiểu biết về
-              thị trường để trở thành một lập trình viên Java chuyên nghiệp,
-              mong muốn hợp tác với BAP Software mang đến nhiều giá trị cho Công
-              ty. Từ đó giúp Công ty tăng số lượng khách hàng và mở rộng tập
-              khách hàng
-            </li>
-          </ul>
-        </div>
-        <div class="Experience">
-          <h2>Kinh nghiệm làm việc</h2>
-          <ul>
-            <li>
-              <b>Đồ án học tập tại PXU: </b>2, 3 năm kinh nghiệm về Java Core,
-              Java OOP, Java Swing, JSP - Servlet, Hibernate & JPA, Maven và
-              hiểu biết thêm Design Pattern như: MVC, MVP, MVVM qua các đồ án
-              học tập tại PXU
-            </li>
-          </ul>
-        </div>
-        <div class="Education">
-          <h2>Học vấn</h2>
-          <p>IT Software</p>
-          <ul>
-            <li>
-              <b>Đại học Phú Xuân: </b>Tốt nghiệp loại Giỏi, điểm trung bình 8.0
-            </li>
-          </ul>
+        <div class="skills-img">
+          <img src="Master.jpg" alt="" />
         </div>
       </div>
+    </section>
+    <!-- Services -->
+    <section class="services" id="services">
+      <div class="heading">
+        <h2>Services</h2>
+        <span>Our Services</span>
+      </div>
+      <div class="services-content">
+        <!-- Box 1 -->
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Java Development</h3>
+          <a href="#">Learn More</a>
+        </div>
+        <!-- Box 2 -->
+        <div class="services-box">
+          <i class="bx bx-server"></i>
+          <h3>Backend Development</h3>
+          <a href="#">Learn More</a>
+        </div>
+        <!-- Box 3 -->
+        <div class="services-box">
+          <i class="bx bx-brush"></i>
+          <h3>UI/UX Design</h3>
+          <a href="#">Learn More</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bxl-wordpress"></i>
+          <h3>Wordpress Developer</h3>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="heading">
+        <h2>Portfolio</h2>
+        <span>Our Recent Work</span>
+      </div>
+      <div class="portfolio-content">
+        <div class="portfolio-img">
+          <img src="blog-2.jpg" alt="" />
+        </div>
+        <div class="portfolio-img">
+          <img src="blog-3.jpg" alt="" />
+        </div>
+        <div class="portfolio-img">
+          <img src="blog-4.jpg" alt="" />
+        </div>
+        <div class="portfolio-img">
+          <img src="blog-5.jpg" alt="" />
+        </div>
+        <div class="portfolio-img">
+          <img src="blog-6.jpg" alt="" />
+        </div>
+        <div class="portfolio-img">
+          <img src="blog-7.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <div class="heading">
+        <h2>Contact</h2>
+        <span>Connect With Us</span>
+      </div>
+      <div class="contact-form">
+        <form action="">
+          <input type="text" placeholder="Your Name" />
+          <input type="email" name="" id="" placeholder="Your Email" />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Write Message Here..."
+          ></textarea>
+          <input type="button" value="Send" class="contact-button" />
+        </form>
+      </div>
+    </section>
+    <!-- Copyright -->
+    <div class="copyright">
+      <p>Create By <a href="">Java Developer</a> | All Right Reserved.</p>
     </div>
+
+    <!-- Link To JS -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
