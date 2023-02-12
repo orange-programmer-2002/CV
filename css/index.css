@@ -1,0 +1,81 @@
+@import url(about.css);
+
+.container-fluid,
+.container-fluid>.row {
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter', sans-serif;
+}
+
+.sidebar {
+    align-items: flex-start;
+    background-color: #299ac5;
+}
+
+.sidebar>nav {
+    height: 100%;
+}
+
+#navbarSupportedContent {
+    height: 100%;
+}
+
+.sidebar-list {
+    padding: 0px;
+    background-color: #299ac5;
+    list-style-type: none;
+    height: 100%;
+}
+
+@media screen and (max-width: 991px) {
+
+    #navbarSupportedContent,
+    .sidebar-list {
+        height: auto;
+    }
+}
+
+.sidebar-list h1 {
+    text-align: center;
+    margin: 40px 0px;
+    font-weight: 500;
+    padding: 0px 10px;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+.sidebar-list .sidebar-list-item a {
+    color: white;
+}
+
+.sidebar-list .sidebar-list-item a:hover {
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
+.sidebar-list .sidebar-list-item {
+    padding: 15px 0px;
+}
+
+.sidebar-list .sidebar-list-item a {
+    padding: 1rem 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+.sidebar-list .sidebar-list-item h6 {
+    margin: auto;
+    font-size: 1.2em;
+    font-weight: 200;
+}
